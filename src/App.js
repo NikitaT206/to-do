@@ -2,10 +2,11 @@ import './App.css';
 import { List } from './components/List';
 import { Form } from './components/Form';
 import { useEffect, useMemo, useState } from 'react';
+import todo from '../src/images/todo.png'
 
 function App() {
   const [posts, setPosts] = useState([
-    {id: 1, title: 'Создать задачу', description: 'Задача'}
+    {id: 1, title: 'Создать задачу', description: 'Задача', date: ''}
   ])
 
   const [search, setSearch] = useState('')
@@ -42,10 +43,18 @@ function App() {
 
   return (
     <div className="App">
-      <Form onSubmit={submit}/>
-      <h1>Список дел</h1>
-      <input className='form__input' placeholder='Поиск по задачам' value={search} type='text' name='search' onChange={handleSearch}></input>
-      {searchPosts.length ? <List posts={searchPosts} onDelete={handleDelete}/> : <p>Задач нет</p>}
+      <div className='grid-container'>
+        <div className='left-menu'>
+          <div className='left-menu__logo-container'>
+            <img className='left-menu__logo' src={todo}/>
+          </div>
+        <Form onSubmit={submit} search={search} handleSearch={handleSearch}/>
+        </div>
+        <div className='right-menu'>
+          <h1 className='right-menu__title'>Список дел</h1>
+          {searchPosts.length ? <List posts={searchPosts} onDelete={handleDelete}/> : <p>Задач нет</p>}
+        </div>
+      </div>
     </div>
   );
 }

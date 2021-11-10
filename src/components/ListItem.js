@@ -6,12 +6,15 @@ export function ListItem(props) {
   
   return (
     <div className='list-item'>
-      <span className='list-item__id'>{props.post.id}</span>
-      <div>
-        <h3 className='list-item__title'>{props.post.title}</h3>
+      <div className='list-item__container'>
+        <h3 className='list-item__title'>
+          <span className='list-item__id'>{props.post.id}</span>
+          {props.post.title}
+        </h3>
         <p className='list-item__description'>{props.post.description}</p>
+        <span className='list-item__time'>{props.post.date}</span>
       </div>
-      <button onClick={handleDelete}>Удалить</button>
+      <button className='list-item__delete-button' onClick={handleDelete}></button>
     </div>
   )
 }
