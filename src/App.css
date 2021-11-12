@@ -25,6 +25,12 @@ body {
     rgba(0, 212, 255, 1) 100%
   );
   overflow-y: scroll;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.left-menu_hide {
+  margin-left: -400px;
 }
 
 .left-menu__logo-container {
@@ -231,6 +237,8 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   row-gap: 30px;
   column-gap: 30px;
+  grid-auto-flow: dense;
+  transition: 0.5s ease-in-out;
 }
 
 .list2 {
@@ -238,6 +246,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 30px;
+  transition: 0.5s ease-in-out;
 }
 
 .list-item {
@@ -348,4 +357,22 @@ body {
     rgba(0, 0, 0, 0.4465853230337079) 48%,
     rgba(0, 0, 0, 1) 80%
   );
+}
+
+.right-menu__arrow-container {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  cursor: pointer;
+}
+
+.right-menu__arrow {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.right-menu__arrow_reverse {
+  transform: rotate(-180deg);
 }

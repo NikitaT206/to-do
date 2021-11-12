@@ -4,6 +4,7 @@ import { Form } from './components/Form';
 import { useEffect, useMemo, useState } from 'react';
 import todo from '../src/images/todo.png'
 import { Sorting } from './components/Sorting';
+import arrow from '../src/images/arrow.png'
 
 function App() {
   const [posts, setPosts] = useState([
@@ -12,7 +13,8 @@ function App() {
 
   const [search, setSearch] = useState('')
   const [sort, setSort] = useState('')
-  const [list, setList] = useState(false)
+  const [list, setList] = useState(true)
+  const [hideMenu, setHideMenu] = useState(true)
 
   useEffect(() => {
     if (localStorage.getItem('posts')) {
@@ -37,7 +39,7 @@ function App() {
   }, [posts, sort, list])
 
   function submit(data) {
-    setPosts([...posts, data])
+    setPosts([data, ...posts])
   }
 
   function handleDelete(post) {
@@ -68,23 +70,30 @@ function App() {
   }
 
   function handleClick() {
-    setList(true)
+    setList(true)    
   }
 
   function handleList() {
     setList(false)
   }
 
+  function hideLeftMenu() {
+    setHideMenu(!hideMenu)
+  }
+
   return (
     <div className="App">
       <div className='grid-container'>
-        <div className='left-menu'>
+        <div className={hideMenu ? 'left-menu' : 'left-menu left-menu_hide'}>
           <div className='left-menu__logo-container'>
             <img className='left-menu__logo' src={todo} alt='todo'/>
           </div>
         <Form onSubmit={submit} search={search} handleSearch={handleSearch}/>
         </div>
         <div className='right-menu'>
+          <div className='right-menu__arrow-container' onClick={hideLeftMenu}>
+            <img className={hideMenu ? 'right-menu__arrow' : 'right-menu__arrow right-menu__arrow_reverse'} src={arrow}/>
+          </div>
           <div className='right-menu__container'>
             <h1 className='right-menu__title'>Список дел</h1>
             <Sorting value={sort} list={list} onChange={handleSort} onList={handleClick} onNotList={handleList}/>
