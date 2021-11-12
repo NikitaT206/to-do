@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/to-do/static/css/main.0e67f867.chunk.css",
+    "main.js": "/to-do/static/js/main.dd6a5b3e.chunk.js",
+    "main.js.map": "/to-do/static/js/main.dd6a5b3e.chunk.js.map",
+    "runtime-main.js": "/to-do/static/js/runtime-main.2eee300e.js",
+    "runtime-main.js.map": "/to-do/static/js/runtime-main.2eee300e.js.map",
+    "static/js/2.59dd75f2.chunk.js": "/to-do/static/js/2.59dd75f2.chunk.js",
+    "static/js/2.59dd75f2.chunk.js.map": "/to-do/static/js/2.59dd75f2.chunk.js.map",
+    "static/js/3.e074527e.chunk.js": "/to-do/static/js/3.e074527e.chunk.js",
+    "static/js/3.e074527e.chunk.js.map": "/to-do/static/js/3.e074527e.chunk.js.map",
+    "index.html": "/to-do/index.html",
+    "static/css/main.0e67f867.chunk.css.map": "/to-do/static/css/main.0e67f867.chunk.css.map",
+    "static/js/2.59dd75f2.chunk.js.LICENSE.txt": "/to-do/static/js/2.59dd75f2.chunk.js.LICENSE.txt",
+    "static/media/arrow.ee86d316.png": "/to-do/static/media/arrow.ee86d316.png",
+    "static/media/App.css": "/to-do/static/media/fon2.466ac0b3.jpg",
+    "static/media/list.b50b0d36.png": "/to-do/static/media/list.b50b0d36.png",
+    "static/media/notList.6e040f73.png": "/to-do/static/media/notList.6e040f73.png",
+    "static/media/todo.b468f517.png": "/to-do/static/media/todo.b468f517.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2eee300e.js",
+    "static/js/2.59dd75f2.chunk.js",
+    "static/css/main.0e67f867.chunk.css",
+    "static/js/main.dd6a5b3e.chunk.js"
+  ]
+}
