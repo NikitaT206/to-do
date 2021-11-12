@@ -8,7 +8,7 @@ export function Form(props) {
     setData({
       ...data,
       [name] : value,
-      date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString()
+      date: new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString(),
     })  
   }
 
