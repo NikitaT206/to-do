@@ -1,0 +1,29 @@
+.form__button {
+  padding: 10px;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid tomato;
+  border-radius: 5px;
+  color: black;
+  max-width: 200px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 30px;
+  color: rgba(255, 255, 255, 0.658);
+  box-sizing: border-box;
+}
+
+.form__button:focus {
+  transform: scale(1.03);
+  background-color: tomato;
+  color: white;
+}
+
+.form__button:hover {
+  background-color: tomato;
+  color: white;
+  transform: scale(1.03);
+}

@@ -1,0 +1,7 @@
+.list2 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+  transition: 0.5s ease-in-out;
+}

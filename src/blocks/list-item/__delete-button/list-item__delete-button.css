@@ -1,0 +1,49 @@
+.list-item__delete-button {
+  cursor: pointer;
+  align-self: flex-start;
+  padding: 10px;
+  background: none;
+  border: none;
+  background: url(../../../images/delete.svg);
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s ease-in-out;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.list-item__delete-button:hover {
+  transform: rotate(90deg);
+}
+
+.list-item__delete-button::before {
+  content: "Удалить задачу";
+  cursor: pointer;
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: tomato;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 900;
+  padding: 10px;
+  color: white;
+  top: -20px;
+  left: -5px;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.list-item__delete-button:hover::before {
+  transform: rotate(-90deg);
+  opacity: 1;
+  visibility: visible;
+}

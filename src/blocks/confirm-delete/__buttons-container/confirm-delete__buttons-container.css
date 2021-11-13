@@ -1,0 +1,6 @@
+.confirm-delete__buttons-container {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  gap: 30px;
+}

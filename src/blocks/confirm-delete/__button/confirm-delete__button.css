@@ -1,0 +1,10 @@
+.confirm-delete__button {
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 900;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.253);
+  cursor: pointer;
+}

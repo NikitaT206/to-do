@@ -1,0 +1,5 @@
+.list-item__id {
+  margin: 0;
+  align-self: flex-start;
+  justify-self: flex-start;
+}

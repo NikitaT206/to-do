@@ -1,0 +1,10 @@
+.sorting__options {
+  background-color: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 12px;
+  max-width: 100px;
+  padding-right: 5px;
+  text-overflow: ellipsis;
+}

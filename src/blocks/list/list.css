@@ -1,0 +1,9 @@
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-auto-flow: dense;
+  transition: 0.5s ease-in-out;
+}
