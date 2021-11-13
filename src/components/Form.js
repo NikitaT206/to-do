@@ -22,11 +22,38 @@ export function Form(props) {
   return (
     <form className='form' onSubmit={handleSubmit}>
       <label className='left-menu__title'>Создайте задачу</label>
-      <input className='form__input' name='title' type='text' value={data.title} onChange={handleChange} placeholder='Заголовок'/>
-      <textarea className='form__input-area' name='description' type='text' value={data.description} onChange={handleChange} placeholder='Описание'/>
+      <input 
+        className='form__input' 
+        name='title' 
+        type='text' 
+        value={data.title} 
+        onChange={handleChange} 
+        placeholder='Заголовок'
+        minLength='2'
+        maxLength='30'
+        required
+        />
+      <textarea 
+        className='form__input-area' 
+        name='description' 
+        type='text' 
+        value={data.description} 
+        onChange={handleChange} 
+        placeholder='Описание'
+        minLength='2'
+        maxLength='1000'
+        required
+        />
       <button className='form__button' type='submit'>Создать</button>
       <label className='left-menu__title'>Найдите задачу</label>
-      <input className='form__input' placeholder='Поиск по задачам' value={props.searchValue} type='text' name='search' onChange={props.onSearch}></input>
+      <input 
+        className='form__input' 
+        placeholder='Поиск по задачам' 
+        value={props.searchValue} 
+        type='text' 
+        name='search' 
+        onChange={props.onSearch}>
+      </input>
     </form>
   )
 }

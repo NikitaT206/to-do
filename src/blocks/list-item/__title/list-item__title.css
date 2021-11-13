@@ -1,6 +1,6 @@
 .list-item__title {
   margin: 0 0 20px 0;
-  max-width: 100%;
   align-self: flex-start;
   justify-self: flex-start;
+  word-break: break-all;
 }

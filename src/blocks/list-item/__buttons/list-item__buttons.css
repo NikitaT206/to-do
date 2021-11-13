@@ -1,0 +1,7 @@
+.list-item__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-height: 100px;
+  align-self: center;
+}

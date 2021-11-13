@@ -5,6 +5,17 @@
   width: 100px;
   border-radius: 10px;
   border: none;
+  color: white;
   border: 1px solid rgba(255, 255, 255, 0.253);
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+  outline: none;
+}
+
+.confirm-delete__button:hover {
+  transform: scale(1.05);
+}
+
+.confirm-delete__button:focus {
+  transform: scale(1.05);
 }

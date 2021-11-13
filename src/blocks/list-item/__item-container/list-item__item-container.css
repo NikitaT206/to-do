@@ -1,0 +1,8 @@
+.list-item__item-container {
+  width: 100%;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
